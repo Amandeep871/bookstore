@@ -112,7 +112,7 @@ tr:hover a {
         <img src="image.jpg" width="200" height="80">
 <!--            <h2 style="color: white"> BookStore</h2>-->
             <ul>
-               <li><a href="index.html">Home</a> &nbsp; &nbsp;</li>
+               <li><a href="index.php">Home</a> &nbsp; &nbsp;</li>
                 <li><a href="store.php">BookStore</a> &nbsp; &nbsp;</li>
               
         </ul>
@@ -120,12 +120,14 @@ tr:hover a {
         </div>
         <main>
         
-        <table width="60%">
+        <table width="70%">
             <thead>
                 <tr>
                 
                    
+                    
                     <th align="left">Book Name</th>
+                    <th align="left">Book Author</th>
                     <th align="left">Price</th>
                     <th align="left">Quantity</th>
                 </tr>
@@ -147,11 +149,13 @@ tr:hover a {
                 if($r>0){
                     while($row = mysqli_fetch_array($result)){
                         echo 
-                        '<tr>
+                        '<tr>               
+                        <td ><a href="checkout.php?bookid='.$row['BookID'].'">' . $row['BookName'] . '</td>
+                         <td >' . $row['Author_Name'] . '</td>
+                        <td >' . $row['Price'] . '</td>
                        
-                        <td align="left"><a href="checkout.php?">' . $row['BookName'] . '</td>
-                        <td align="left">' . $row['Price'] . '</td>
-                        <td align="left">' . $row['Quantity'] . 
+                      
+                        <td >' . $row['Quantity'] . 
                         '</td></tr>';
                     }
                 }

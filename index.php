@@ -96,12 +96,13 @@ ul li a:hover{
         <img src="image.jpg" width="200" height="80">
 <!--            <h2 style="color: white"> BookStore</h2>-->
             <ul>
-               <li><a href="index.html">Home</a> &nbsp; &nbsp;</li>
+               <li><a href="index.php">Home</a> &nbsp; &nbsp;</li>
                 <li><a href="store.php">BookStore</a> &nbsp; &nbsp;</li>
               
         </ul>
       </nav>
         </div>
+        
         <main>
             <br><br>
             <div class="para">
@@ -109,6 +110,7 @@ ul li a:hover{
                 <br><br>
                     This site is for book lovers who love reading they can buy books according to their choice.</p>
            <img src="pic.png"></div>
+          
         </main>
         <footer>
             
